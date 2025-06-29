@@ -2,11 +2,16 @@ import styled from "styled-components";
 
 const InputMemberInfo = styled.input`
   width: 100%;
-  border: 2px solid gray;
-  border-radius: 8px;
+  border: 2px solid white;
+  border-radius: 4px;
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.4);
   padding: 8px;
-  margin: 2px;
+  margin: 4px;
   box-sizing: border-box;
+`;
+
+const InputMoney = styled(InputMemberInfo)`
+  margin-bottom: 8px;
 `;
 
 const Member = ({ id, money, name, onChange }) => {
@@ -26,7 +31,7 @@ const Member = ({ id, money, name, onChange }) => {
         value={name}
         onChange={handleChangeName}
       />
-      <InputMemberInfo 
+      <InputMoney 
         placeholder="例：1000"
         value={money}
         onChange={handleMoneyName}
