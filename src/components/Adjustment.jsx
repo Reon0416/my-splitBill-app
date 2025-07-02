@@ -1,3 +1,17 @@
+import styled from "styled-components";
+
+const AdjTitle = styled.h2`
+  text-align: center;
+  font-size: 24px;
+  margin: 24px 0 12px;
+`;
+
+const ResultInfo = styled.p`
+  margin: 8px 0;
+  text-align: center;
+`;
+
+
 const Adjustment = ({members, splitBill}) => {
 
   const splitCalc = (members) => {
@@ -39,12 +53,12 @@ const Adjustment = ({members, splitBill}) => {
     
   return(
     <>
-      <h1>精算</h1>
+      <AdjTitle>精算結果</AdjTitle>
       {result.map((p, index) => {
        return(
-        <h2 key={index}>
-          {`${p.from}から${p.to}へ${p.amount}円`}
-        </h2>
+        <ResultInfo key={index}>
+          {`${p.from}→${p.to}：${p.amount}円`}
+        </ResultInfo>
        )
       })}
       

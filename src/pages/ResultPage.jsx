@@ -6,19 +6,49 @@ const MainDiv = styled.div`
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  background-color: black;
+  align-items: flex-start;
+  background-color: white;
   padding: 200px 0;
 `;
 
 const InputBoxDiv = styled.div`
   background-color: white;
+  border-radius: 12px;
   padding: 30px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   width: 300px;
-  height: auto;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+`;
+
+const Title = styled.h2`
+  font-size: 24px;
+  text-align: center;
+  margin: 12px 0 24px;
+`;
+
+const SplitBill = styled(Title)`
+  font-size: 24px;
+  margin: 12px 0 24px;
+`;
+
+const MemberButton = styled.button`
+  background-color: #5b88a7; /* 落ち着いた青 */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  margin-top: 32px;
+  width: 100%; /* 必要なら調整 */
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.5s;
+
+  &:hover {
+    background-color: #28485b;
+  }
 `;
 
 const ResultPage = () => {
@@ -44,11 +74,10 @@ const ResultPage = () => {
     <>
       <MainDiv>
         <InputBoxDiv>
-          <h2>{head}</h2>
-          <p>1人当たり</p>
-          <h1>{splitMoney()}円</h1>
+          <Title>--- {head} ---</Title>
+          <SplitBill>1人当たり: {splitMoney()}円</SplitBill>
           <Adjustment members={members} splitBill={splitBill}/>
-          <button onClick={end}>完了</button>
+          <MemberButton onClick={end}>完了</MemberButton>
         </InputBoxDiv>
       </MainDiv>
     </>
