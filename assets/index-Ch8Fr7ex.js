@@ -63,9 +63,8 @@ Please change the parent <Route path="${C}"> to <Route path="${C==="/"?"*":`${C}
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  background-color: white;
-  padding: 200px 0;
+  align-items: center;
+  background-color: #92a5b1;
 `,dg=ee.div`
   background-color: white;
   border-radius: 12px;
@@ -106,7 +105,7 @@ Please change the parent <Route path="${C}"> to <Route path="${C==="/"?"*":`${C}
 `,yg=ee(Ur)`
   border: 2px solid #345466;
   margin-top: 12px;
-`,vg=()=>{const[u,c]=H.useState(),[r,f]=H.useState([]),s=Qi(),h=()=>{f([...r,{name:"",money:""}])},p=()=>{s("/result",{state:{head:u,members:r}})},T=()=>{f(v=>v.slice(0,-1))};return it.jsx(it.Fragment,{children:it.jsx(sg,{children:it.jsxs(dg,{children:[it.jsx(hg,{children:"割り勘アプリ"}),it.jsx(mg,{placeholder:"例：夜ご飯代",value:u,onChange:v=>c(v.target.value)}),it.jsx(Ur,{onClick:h,children:"メンバー追加"}),it.jsx(Ur,{onClick:T,children:"メンバーを削除"}),r.map((v,m)=>it.jsx(og,{id:m,name:v.name,money:v.money,onChange:R=>{const U=[...r];U[m]=R,f(U)}})),it.jsx(yg,{onClick:p,children:"計算する"})]})})})},pg=ee.h2`
+`,vg=()=>{const[u,c]=H.useState(),[r,f]=H.useState([]),s=Qi(),h=()=>{f([...r,{name:"",money:""}])},p=()=>{s("/result",{state:{head:u,members:r}})},T=()=>{f(v=>v.slice(0,-1))};return it.jsx(it.Fragment,{children:it.jsx(sg,{children:it.jsxs(dg,{children:[it.jsx(hg,{children:"割り勘しマス"}),it.jsx(mg,{placeholder:"例：夜ご飯代",value:u,onChange:v=>c(v.target.value)}),it.jsx(Ur,{onClick:h,children:"メンバー追加"}),it.jsx(Ur,{onClick:T,children:"メンバーを削除"}),r.map((v,m)=>it.jsx(og,{id:m,name:v.name,money:v.money,onChange:R=>{const U=[...r];U[m]=R,f(U)}})),it.jsx(yg,{onClick:p,children:"計算する"})]})})})},pg=ee.h2`
   text-align: center;
   font-size: 24px;
   margin: 24px 0 12px;
@@ -117,9 +116,8 @@ Please change the parent <Route path="${C}"> to <Route path="${C==="/"?"*":`${C}
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  background-color: white;
-  padding: 200px 0;
+  align-items: center;
+  background-color: #92a5b1;
 `,Eg=ee.div`
   background-color: white;
   border-radius: 12px;
@@ -133,8 +131,8 @@ Please change the parent <Route path="${C}"> to <Route path="${C==="/"?"*":`${C}
   text-align: center;
   margin: 12px 0 24px;
 `,Tg=ee(l0)`
-  font-size: 24px;
-  margin: 12px 0 24px;
+  font-size: 28px;
+  margin: 32px 0 12px;
 `,Ag=ee.button`
   background-color: #5b88a7; /* 落ち着いた青 */
   color: white;
