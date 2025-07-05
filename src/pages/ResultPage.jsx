@@ -6,9 +6,8 @@ const MainDiv = styled.div`
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  background-color: white;
-  padding: 200px 0;
+  align-items: center;
+  background-color: #92a5b1;
 `;
 
 const InputBoxDiv = styled.div`
@@ -28,8 +27,8 @@ const Title = styled.h2`
 `;
 
 const SplitBill = styled(Title)`
-  font-size: 24px;
-  margin: 12px 0 24px;
+  font-size: 28px;
+  margin: 32px 0 12px;
 `;
 
 const MemberButton = styled.button`

@@ -7,9 +7,8 @@ const MainDiv = styled.div`
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  background-color: white;
-  padding: 200px 0;
+  align-items: center;
+  background-color: #92a5b1;
 `;
 
 const InputBoxDiv = styled.div`
@@ -90,7 +89,7 @@ const InputPage = () => {
     <>
       <MainDiv>
         <InputBoxDiv>
-          <Title>割り勘アプリ</Title>
+          <Title>割り勘しマス</Title>
           <TitleInput
             placeholder="例：夜ご飯代"
             value={head}
